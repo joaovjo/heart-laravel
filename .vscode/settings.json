@@ -1,0 +1,18 @@
+{
+    // 1. Define the Mago command for the formatter extension.
+    "customLocalFormatters.formatters": [
+        {
+            "command": "mago format --stdin-input",
+            "languages": [
+                "php"
+            ]
+        }
+    ],
+    // 2. Configure VS Code to use this extension for PHP files.
+    "[php]": {
+        // Set the custom formatter as the default for PHP.
+        "editor.defaultFormatter": "jkillian.custom-local-formatters",
+        // Recommended: automatically format files on save.
+        "editor.formatOnSave": true
+    }
+}
