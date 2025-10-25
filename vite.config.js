@@ -12,11 +12,11 @@ export default defineConfig({
     ],
     watch: {
         usePolling: true,
-        origin: 'http://laravel.test'
+        origin: 'http://localhost'
     },
     server: {
         hmr: {
-            host: 'laravel.test'
+            host: 'localhost'
         }
     }
 });
