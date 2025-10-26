@@ -54,6 +54,19 @@
             "@php artisan config:clear --ansi",
             "@php artisan test"
         ],
+        "mago": "vendor/bin/mago",
+        "mago:format": "vendor/bin/mago format",
+        "mago:format:check": "vendor/bin/mago format --check",
+        "mago:lint": "vendor/bin/mago lint",
+        "mago:lint:fix": "vendor/bin/mago lint --fix",
+        "mago:analyze": "vendor/bin/mago analyze",
+        "mago:guard": "vendor/bin/mago guard",
+        "mago:check": [
+            "@mago:format:check",
+            "@mago:lint",
+            "@mago:analyze",
+            "@mago:guard"
+        ],
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover --ansi"
