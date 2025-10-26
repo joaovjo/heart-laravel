@@ -13,6 +13,7 @@ tab-width = 4
 use-tabs = false
 end-of-line = "lf"
 classlike-brace-style = "same_line"
+method-brace-style = "same_line"
 
 [linter]
 integrations = ["laravel", "pest"]
@@ -27,6 +28,7 @@ no-literal-password = { enabled = false }
 class-name = { enabled = false }
 
 [analyzer]
+baseline = "analyzer-baseline.toml"
 find-unused-definitions = true
 find-unused-expressions = false
 analyze-dead-code = false
