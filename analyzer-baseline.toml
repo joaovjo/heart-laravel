@@ -1,0 +1,49 @@
+[[entries."tests/Feature/ExampleTest.php".issues]]
+code = "mixed-assignment"
+start_line = 5
+end_line = 5
+
+[[entries."tests/Feature/ExampleTest.php".issues]]
+code = "mixed-method-access"
+start_line = 5
+end_line = 5
+
+[[entries."tests/Feature/ExampleTest.php".issues]]
+code = "mixed-method-access"
+start_line = 7
+end_line = 7
+
+[[entries."tests/Feature/ExampleTest.php".issues]]
+code = "undefined-variable"
+start_line = 5
+end_line = 5
+
+[[entries."tests/Pest.php".issues]]
+code = "mixed-method-access"
+start_line = 16
+end_line = 16
+
+[[entries."tests/Pest.php".issues]]
+code = "mixed-method-access"
+start_line = 18
+end_line = 18
+
+[[entries."tests/Pest.php".issues]]
+code = "mixed-method-access"
+start_line = 31
+end_line = 31
+
+[[entries."tests/Pest.php".issues]]
+code = "mixed-method-access"
+start_line = 31
+end_line = 31
+
+[[entries."tests/Pest.php".issues]]
+code = "possibly-undefined-variable"
+start_line = 31
+end_line = 31
+
+[[entries."tests/Unit/ExampleTest.php".issues]]
+code = "mixed-method-access"
+start_line = 5
+end_line = 5

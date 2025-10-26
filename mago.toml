@@ -1,10 +1,13 @@
 # Welcome to Mago!
 # For full documentation, see https://mago.carthage.software/tools/overview
-php-version = "8.2.0"
+php-version = "8.4.0"
 
 [source]
 paths = ["app/", "database/factories/", "database/seeders/", "tests/"]
-includes = []
+includes = [
+    "vendor/laravel/framework/src/Illuminate",
+    "vendor/pestphp/pest/src",
+]
 excludes = ["vendor"]
 
 [formatter]
@@ -36,3 +39,32 @@ analyze-dead-code = false
 check-throws = true
 allow-possibly-undefined-array-keys = true
 perform-heuristic-checks = true
+existence-issues = false
+
+[guard]
+excludes = []
+
+[guard.perimeter.layers]
+laravel = ["Illuminate\\**"]
+pest = ["Pest\\**"]
+testing = ["PHPUnit\\**"]
+
+[[guard.perimeter.rules]]
+namespace = "App\\"
+permit = ["@native", "@self", "@layer:laravel"]
+
+[[guard.perimeter.rules]]
+namespace = "Database\\Factories\\"
+permit = ["@native", "@self", "@layer:laravel", "App\\Models\\**"]
+
+[[guard.perimeter.rules]]
+namespace = "Database\\Seeders\\"
+permit = ["@native", "@self", "@layer:laravel", "App\\Models\\**"]
+
+[[guard.perimeter.rules]]
+namespace = "Tests\\"
+permit = ["@all"]
+
+[[guard.perimeter.rules]]
+namespace = "@global"
+permit = ["@all"]
