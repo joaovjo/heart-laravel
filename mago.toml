@@ -20,6 +20,7 @@ ambiguous-function-call = { enabled = false }
 literal-named-argument = { enabled = false }
 halstead = { effort-threshold = 7000 }
 no-literal-password = { enabled = false }
+class-name = { enabled = false }
 
 [analyzer]
 find-unused-definitions = true
