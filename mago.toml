@@ -11,9 +11,12 @@ excludes = []
 print-width = 120
 tab-width = 4
 use-tabs = false
+end-of-line = "lf"
 
 [linter]
 integrations = ["laravel", "pest"]
+excludes = []
+baseline = "linter-baseline.toml"
 
 [linter.rules]
 ambiguous-function-call = { enabled = false }
