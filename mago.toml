@@ -4,8 +4,8 @@ php-version = "8.2.0"
 
 [source]
 paths = ["app/", "database/factories/", "database/seeders/", "tests/"]
-includes = ["vendor"]
-excludes = []
+includes = []
+excludes = ["vendor"]
 
 [formatter]
 print-width = 120
@@ -16,9 +16,10 @@ classlike-brace-style = "same_line"
 method-brace-style = "same_line"
 
 [linter]
+baseline = "linter-baseline.toml"
 integrations = ["laravel", "pest"]
 excludes = []
-baseline = "linter-baseline.toml"
+
 
 [linter.rules]
 ambiguous-function-call = { enabled = false }
